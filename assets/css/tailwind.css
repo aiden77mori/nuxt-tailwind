@@ -5,15 +5,15 @@
 @layer base {
     @font-face {
       font-family: Lato;
-      /* font-weight: 400; */
-      src: url('../font/Lato-Medium.ttf') format("ttf");
+      font-weight: 700;
+      src: url('../font/Lato-Regular.woff') format("woff");
     }
     @font-face {
       font-family: Lato-Bold;
       font-weight: 500;
       src: url('../font/Lato-Bold.ttf') format("ttf");
     }
-  }
+}
 
 body {
     font-family: 'Lato';
