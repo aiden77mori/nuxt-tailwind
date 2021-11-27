@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav class="bg-white shadow-md rounded-b-2xl fixed w-full z-50 top-0 right-0 left-0">
+        <nav class="bg-white shadow-md rounded-b-2xl w-full z-50 fixed top-0">
             <div class="h-1 bg-gradient-to-r from-green-c200 to-blue-c200"></div>
             <div class="mx-auto px-4">
                 <div class="flex justify-between">
