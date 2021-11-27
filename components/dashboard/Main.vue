@@ -29,9 +29,9 @@
         <div class="">
             <div class="mx-auto px-4">
                 <div class="flex flex-row overflow-scroll scrollbar-hide mt-6 mb-6">
-                    <button v-bind:class="[isShowing1 ? 'bg-green-c300 text-white': 'text-green-c100', 'rounded-l-2xl', 'py-2', 'px-6', 'w-full', 'border-2', 'border-gray-100']" @click="say('section1')">Arbeitnehmer</button>
-                    <button v-bind:class="[isShowing2 ? 'bg-green-c300 text-white': 'text-green-c100', 'py-2', 'px-6', 'w-full', 'border-2', 'border-gray-100']" @click="say('section2')">Arbeitgeber</button>
-                    <button v-bind:class="[isShowing3 ? 'bg-green-c300 text-white': 'text-green-c100', 'rounded-r-2xl', 'py-2', 'px-6', 'w-full', 'border-2', 'border-gray-100']" @click="say('section3')">Temporaburo</button>
+                    <button v-bind:class="[isShowing1 ? 'bg-green-c300 text-white': 'text-green-c100', 'rounded-l-2xl', 'py-2', 'px-6', 'w-18', 'border-2', 'border-gray-100']" @click="say('section1')">Arbeitnehmer</button>
+                    <button v-bind:class="[isShowing2 ? 'bg-green-c300 text-white': 'text-green-c100', 'py-2', 'px-6', 'w-18', 'border-2', 'border-gray-100']" @click="say('section2')">Arbeitgeber</button>
+                    <button v-bind:class="[isShowing3 ? 'bg-green-c300 text-white': 'text-green-c100', 'rounded-r-2xl', 'py-2', 'px-6', 'w-18', 'border-2', 'border-gray-100']" @click="say('section3')">Temporaburo</button>
                 </div>
             </div>
 
