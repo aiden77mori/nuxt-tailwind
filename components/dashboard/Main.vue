@@ -1,38 +1,34 @@
 <template>
     <div>
-        <div class="bg-blue-c100">
-            <nav class="bg-white shadow-md rounded-b-2xl">
-                <div class="h-1 bg-gradient-to-r from-green-c200 to-blue-c200"></div>
-                <div class="mx-auto px-4">
-                    <div class="flex justify-between">
-                        <div class="flex h-16">
-                            <div class="md:flex">
-                                <a href="#" class="font-medium text-green-c100 absolute right-7 top-6 text-sm">Login</a>
-                            </div>                    
-                        </div>
+        <nav class="bg-white shadow-md rounded-b-2xl fixed w-full z-50 top-0 right-0 left-0">
+            <div class="h-1 bg-gradient-to-r from-green-c200 to-blue-c200"></div>
+            <div class="mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex h-16">
+                        <div class="md:flex">
+                            <a href="#" class="font-medium text-green-c100 absolute right-7 top-6 text-sm">Login</a>
+                        </div>                    
                     </div>
                 </div>
-            </nav>
-
-            <div class="mt-4 text-center">
-                <div class="px-4">
+            </div>
+        </nav>
+        
+        <div class="relative h-659">
+            <div class="absolute text-center z-10">
+                <div class="px-4 pt-20">
                     <h1 class="text-gray-700 text-5xl">
                         Deine Job website
                     </h1>
                 </div>
-                <div class="agree mt-4 w-full"></div>
+                <div class="agree mt-2 w-full"></div>
             </div>
+
+            <div class="absolute top-0 right-0 left-0 h-full" ><svg preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00, 639.37 C120.00, 639.48 240.50, 550.86 360.00,575.50 L360.00, 0.00 L0.00, 0.00 Z" style="stroke: none; fill: #E6FFFA;"></path></svg></div>
         </div>
 
-        <div class="bg-white shadow-md rounded-t-2xl -mt-10">
-             <div class="mx-auto px-4 border-b-2 border-gray-100">
-                <div class="flex h-36">
-                    <button class="bg-gradient-to-r from-green-c200 to-blue-c200 rounded-t-2xl rounded-b-2xl py-2 px-6 text-white w-full mt-6 h-11">Kostenlos Registrieren</button>
-                </div>
-            </div>
-
+        <div class="">
             <div class="mx-auto px-4">
-                <div class="flex flex-row overflow-scroll scrollbar-hide mt-6 mb-6">
+                <div class="flex flex-row overflow-scroll mt-6 mb-6">
                     <button v-bind:class="[isShowing1 ? 'bg-green-c300 text-white': 'text-green-c100', 'rounded-l-2xl', 'py-2', 'px-6', 'w-full', 'border-2', 'border-gray-100']" @click="say('section1')">Arbeitnehmer</button>
                     <button v-bind:class="[isShowing2 ? 'bg-green-c300 text-white': 'text-green-c100', 'py-2', 'px-6', 'w-full', 'border-2', 'border-gray-100']" @click="say('section2')">Arbeitgeber</button>
                     <button v-bind:class="[isShowing3 ? 'bg-green-c300 text-white': 'text-green-c100', 'rounded-r-2xl', 'py-2', 'px-6', 'w-full', 'border-2', 'border-gray-100']" @click="say('section3')">Temporaburo</button>
@@ -50,7 +46,12 @@
             <div class="mx-auto" v-if="isShowing3">
                 <Three />
             </div>
+        </div>
 
+        <div class="bg-white mx-auto border-t-2 border-gray-200 shadow-md rounded-t-2xl fixed bottom-0 right-0 left-0 z-50">
+            <div class="flex h-24 px-4 items-center">
+                <button class="bg-gradient-to-r from-green-c200 to-blue-c200 rounded-t-2xl rounded-b-2xl text-white w-full h-11">Kostenlos Registrieren</button>
+            </div>
         </div>
     </div>
 </template>
@@ -59,6 +60,9 @@
     .agree {
         background: url('~image/agree.svg'); 
         height: 404.84px;
+    }
+    .h-659 {
+        height: 659.37px;
     }
 </style>
 
